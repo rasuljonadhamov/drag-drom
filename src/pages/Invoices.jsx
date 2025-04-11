@@ -54,7 +54,7 @@ export default function Invoices() {
             movingItem.y + movingItem.height > i.y;
 
           if (overlap) {
-            return { ...i, y: i.y + movingItem.height + 20 };
+            return { ...i, y: i.y + movingItem.height/2 };
           }
           return i;
         });
@@ -105,7 +105,7 @@ export default function Invoices() {
             updatedItem.y + updatedItem.height > i.y;
 
           if (overlap) {
-            return { ...i, y: i.y + updatedItem.height + 20 };
+            return { ...i, y: i.y + updatedItem.height/2 };
           }
           return i;
         });

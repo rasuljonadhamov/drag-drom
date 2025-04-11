@@ -12,7 +12,6 @@ export default function App() {
         <div className="flex-1 p-4 overflow-auto">
           <Routes>
             <Route path="/" element={<Invoices />} />
-            <Route path="/invoices" element={<Invoices />} />
             <Route path="/clients" element={<Dashboard />} />
           </Routes>
         </div>
